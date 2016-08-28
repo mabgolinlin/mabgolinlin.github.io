@@ -1,1 +1,149 @@
-年少时走错的路，多半都来得及回头
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <link href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet"> -->
+	<style>
+	@font-face {font-family: 'iconfont';
+    src: url('fonts/iconfont.eot'); /* IE9*/
+    src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+	}	
+	
+
+/*@keyframes flash {
+	  from, 50%, to {
+	    opacity: 1;
+	  }
+
+	  25%, 75% {
+	    opacity: 0;
+	  }
+}*/
+
+@keyframes bounceOut {
+  20% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+
+	nav{
+		width: 895px;
+		margin: 0 auto;
+		margin-top: 300px;
+	}
+
+	.iconfont{
+		text-decoration: none;
+		text-align: center;
+		float: left;
+		display: block;
+		width: 100px;
+		height: 100px;
+		/*border:1px solid red;*/
+	    line-height:100px;
+	    font-family:"iconfont";
+	    font-size:60px;
+	    border:2px solid #000;
+	    color:#000;
+	    font-style:normal;
+	    border-radius:100px;
+	    margin-right:20px;
+	    backface-visibility: visible !important;
+  		animation: flipInX 1s;
+
+	}
+
+	.iconfont:hover{
+		font-size:76px;
+		/*animation:flash 1s;*/
+		 animation: bounceOut 1s;
+
+	}
+
+	.iconfont:first-child{
+		color:red;
+	}  
+
+    .iconfont:nth-child(2){
+    	color:orange;
+    }
+
+    .iconfont:nth-child(3){
+    	color:yellow;
+    }
+
+    .iconfont:nth-child(4){
+    	color:green;
+    }
+
+    .iconfont:nth-child(5){
+    	color:#00fcff;
+    }
+
+    .iconfont:nth-child(6){
+    	color:blue;
+    }
+
+    .iconfont:last-child{
+    	color:#ff0087;
+    }
+
+
+
+		
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#" class="iconfont">&#xe63c;</a>
+		<a href="#" class="iconfont">&#xe6bc;</a>
+		<a href="#" class="iconfont">&#xe6aa;</a>
+		<a href="#" class="iconfont">&#xe63d;</a>
+		<a href="#" class="iconfont">&#xe616;</a>
+		<a href="#" class="iconfont">&#xf002b;</a>
+		<a href="#" class="iconfont">&#xf002d;</a>
+	</nav>
+</body>
+</html>
